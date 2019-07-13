@@ -115,6 +115,7 @@ main .detial .l-bar .bar .process-bar {
     height: 100%;
     background: #fff;
     border-radius: 0.2vh;
+    transition: all 0.9s;
 }
 
 main .detial .l-bar .current-time {
@@ -242,4 +243,9 @@ footer h3 {
     content: "";
     display: block;
     clear: both;
+}
+
+.styleText {
+    display: inline-block;
+    opacity: 0;
 }
