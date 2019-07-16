@@ -136,6 +136,10 @@ var Fm = {
         _this.$container.find('.btn-next').on('click', function () {
             _this.loadMusic()
         })
+        _this.$container.find('.btn-collect').on('click', function () {
+            console.log(1)
+            _this.$container.find('.btn-collect').addClass('animate pulse')
+        })
         //播放
         _this.audio.addEventListener('play', function () {
             _this.$container.find('.btn-play').removeClass('icon-play').addClass('icon-pause')
@@ -148,6 +152,7 @@ var Fm = {
         _this.audio.addEventListener('pause', function () {
             clearInterval(_this.statusClock)
         })
+
     },
     //根据类别加载歌曲
     loadMusic() {
