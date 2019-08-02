@@ -193,7 +193,7 @@ var Fm = {
         })
         var line = this.lyricObj['0' + min + ':' + second]
         if (line) {
-            this.$container.find('.lyric p').text(line).styletext('rollIn')
+            this.$container.find('.lyric p').text(line).styletext('fadeInLeft')
         }
     },
     //歌词播放设置
@@ -243,4 +243,4 @@ Footer.init()
 Fm.init()
 setTimeout(function () {
     $('.box ul li:first-child').trigger('click')
-}, 2000)
+}, 1000)
